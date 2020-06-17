@@ -13,24 +13,13 @@
 // console.log(Math.random());
 // console.log('stoping....')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 const req=require('request');
 const request = require('request');
-const url='http://api.weatherstack.com/current?access_key=6e1c3a3bdc20126dd2f144618e44b7c0&query=New%20York'
-
-request({url:url},(error,response)=>{
-const data=JSON.parse(response.body);
-console.log(data);
+const url=
+'http://api.weatherstack.com/current?access_key=6e1c3a3bdc20126dd2f144618e44b7c0&query=bijnor'
+request({ url: url, json: true }, (error, response) => {
+    console.log(
+        ' It is currently ' + response.body.current.temperature + 
+        ' degress out. There is a ' + response.body.current.precip 
+        + '% chance of rain.')
 })
