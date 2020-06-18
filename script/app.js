@@ -23,3 +23,8 @@ request({ url: url, json: true }, (error, response) => {
         ' degress out. There is a ' + response.body.current.precip 
         + '% chance of rain.')
 })
+
+// TOKEN FOR WEATHER STACK .COM 6e1c3a3bdc20126dd2f144618e44b7c0
+// TOKEN FOR MAPBOX pk.eyJ1IjoicmlzaHNoYXJtYTkwMTIiLCJhIjoiY2tiazdzeG9uMDBlNDJ1cXQ5eXRwNnFsbiJ9.sw50PE8rcRUxNSqqVJEYgw
+Request is designed to be the simplest way possible to make http calls. It supports HTTPS and follows redirects by default.
+
